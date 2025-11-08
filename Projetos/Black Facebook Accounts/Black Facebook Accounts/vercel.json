@@ -1,7 +1,8 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
+  "buildCommand": null,
+  "outputDirectory": null,
   "framework": null,
+  "installCommand": null,
   "rewrites": [
     {
       "source": "/br",
