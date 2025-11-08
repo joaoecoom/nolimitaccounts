@@ -932,32 +932,34 @@ section {
 
 /* Pricing Section */
 .pricing-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .pricing-section h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: clamp(1.75rem, 4vw, 2rem);
 }
 
 .pricing-subtitle {
     text-align: center;
     color: #475569;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
 }
 
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .pricing-card {
     background: linear-gradient(135deg, #ffffff 0%, #f6f9fc 100%);
-    border-radius: 1rem;
-    padding: 2.5rem;
+    border-radius: 0.875rem;
+    padding: 1.75rem;
     box-shadow: 0 18px 38px rgba(2, 6, 23, 0.08);
     border: 1px solid #e6edf5;
     position: relative;
@@ -977,14 +979,14 @@ section {
 
 .popular-badge {
     position: absolute;
-    top: -10px;
+    top: -8px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     border-radius: 9999px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -993,63 +995,65 @@ section {
 
 .pricing-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .pricing-header h3 {
     color: #0f172a;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.25rem;
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .price span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #64748b;
     font-weight: 500;
 }
 
 .pricing-header p {
     color: #475569;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
 }
 
 .savings-badge {
     display: inline-block;
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.875rem;
     border-radius: 9999px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .features-list {
-    margin: 1.5rem 0;
+    margin: 1.25rem 0;
 }
 
 .features-list li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
     color: #475569;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 }
 
 .btn-pricing {
     width: 100%;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
 }
 
@@ -1060,12 +1064,13 @@ section {
     gap: 0.5rem;
     width: 100%;
     justify-content: center;
-    padding: 0.9rem 1.25rem;
+    padding: 0.75rem 1.1rem;
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: #fff;
     text-decoration: none;
-    border-radius: 0.75rem;
+    border-radius: 0.65rem;
     font-weight: 700;
+    font-size: 0.9rem;
     box-shadow: 0 10px 22px rgba(16, 185, 129, 0.25);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

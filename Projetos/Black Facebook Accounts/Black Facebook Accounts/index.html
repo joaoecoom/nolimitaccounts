@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contas NO LIMIT - Escale Sem Limites</title>
+    <title>NO LIMIT Accounts - Scale Without Limits</title>
+    <script>
+        // Redirect BEFORE any content loads - no flicker!
+        (function() {
+            try {
+                const storedLang = localStorage.getItem('language');
+                if (storedLang === 'br') {
+                    window.location.replace('/br');
+                    return;
+                }
+                
+                const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                const lang = navigator.language || navigator.userLanguage;
+                
+                if (timezone.includes('America/Sao_Paulo') || 
+                    timezone.includes('America/Belem') || 
+                    timezone.includes('America/Fortaleza') ||
+                    timezone.includes('Europe/Lisbon') ||
+                    lang.startsWith('pt')) {
+                    window.location.replace('/br');
+                }
+            } catch(e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,8 +34,8 @@
 <body class="dark">
     <!-- Language Flag Button (Top Right) -->
     <div class="language-flag-button" id="languageFlagBtn">
-        <span class="flag" id="flagIcon">🇧🇷</span>
-        <span class="flag-text" id="flagText">BR</span>
+        <span class="flag" id="flagIcon">🇬🇧</span>
+        <span class="flag-text" id="flagText">EN</span>
     </div>
 
     <!-- Hero Section (new) -->
@@ -21,43 +44,43 @@
             <div class="hero-pro-card">
                 <div class="hero-pro-grid">
                     <div class="hero-pro-left">
-                        <h1 class="hero-pro-title"><span>Contas de Agência</span> NO LIMIT</h1>
-                        <p class="hero-pro-sub">Escale seu negócio sem limites de gasto diário</p>
-                        <p class="hero-pro-desc">Contas de agência verificadas sem limites diários. Perfeitas para escalar com confiança e alcançar milhões de clientes.</p>
+                        <h1 class="hero-pro-title"><span>Agency Accounts</span> NO LIMIT</h1>
+                        <p class="hero-pro-sub">Scale your business with no daily spend limits</p>
+                        <p class="hero-pro-desc">Agency-verified accounts with no daily caps. Perfect for scaling reliably and reaching millions of customers.</p>
 
                         <div class="hero-pro-authority">
-                            <span class="authority-badge">+10.000 contas entregues</span>
-                            <span class="authority-badge">98% de satisfação</span>
-                            <span class="authority-badge">5 anos no mercado</span>
+                            <span class="authority-badge">10,000+ accounts delivered</span>
+                            <span class="authority-badge">98% satisfaction</span>
+                            <span class="authority-badge">5 years in market</span>
                         </div>
                         <div class="hero-pro-stats">
                             <div class="stat">
                                 <h3>$ NO LIMIT</h3>
-                                <p>Gasto diário</p>
+                                <p>Daily spend</p>
                             </div>
                             <div class="stat">
                                 <h3>100%</h3>
-                                <p>Garantia</p>
+                                <p>Guarantee</p>
                             </div>
                             <div class="stat">
                                 <h3>24/7</h3>
-                                <p>Suporte</p>
+                                <p>Support</p>
                             </div>
                         </div>
 
                         <ul class="hero-pro-bullets">
-                            <li><i class="fas fa-infinity"></i> Sem limite de gastos diários</li>
-                            <li><i class="fas fa-shield-alt"></i> Proteção contra bloqueio de cartão</li>
-                            <li><i class="fas fa-rocket"></i> Prontas para escalar</li>
-                            <li><i class="fas fa-building"></i> Verificadas como agência</li>
+                            <li><i class="fas fa-infinity"></i> No daily spend limits</li>
+                            <li><i class="fas fa-shield-alt"></i> Protection against card blocking</li>
+                            <li><i class="fas fa-rocket"></i> Built for scaling</li>
+                            <li><i class="fas fa-building"></i> Agency verified</li>
                         </ul>
 
                         <div class="hero-pro-cta">
-                            <a href="https://wa.link/30gnt1" class="btn-primary">
+                            <a href="https://wa.link/p3jfp3" class="btn-primary">
                                 <i class="fas fa-shopping-cart"></i>
-                                Comprar Agora
+                                Buy Now
                             </a>
-                            <span class="hero-pro-note"><i class="fas fa-bolt"></i> Oferta por tempo limitado</span>
+                            <span class="hero-pro-note"><i class="fas fa-bolt"></i> Limited time offer</span>
                         </div>
                     </div>
                 </div>
@@ -68,19 +91,19 @@
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <h2>Por Que Somos #1 em Contas NO LIMIT?</h2>
+            <h2>Why We're #1 in NO LIMIT Accounts</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>$ NO LIMIT</h3>
-                    <p>Limite de gasto diário</p>
+                    <p>Daily spend limit</p>
                 </div>
                 <div class="stat-card">
                     <h3>100%</h3>
-                    <p>Garantia</p>
+                    <p>Guarantee</p>
                 </div>
                 <div class="stat-card">
                     <h3>24/7</h3>
-                    <p>Suporte</p>
+                    <p>Support</p>
                 </div>
             </div>
         </div>
@@ -89,23 +112,23 @@
     <!-- Trust Section -->
     <section class="trust-section">
         <div class="container">
-            <h2>Confiança de Milhares de Empreendedores</h2>
+            <h2>Trusted by Thousands of Entrepreneurs</h2>
             <div class="trust-grid">
                 <div class="trust-item">
                     <h3>10,000+</h3>
-                    <p>Contas entregues</p>
+                    <p>Accounts delivered</p>
                 </div>
                 <div class="trust-item">
                     <h3>98%</h3>
-                    <p>Taxa de satisfação</p>
+                    <p>Satisfaction rate</p>
                 </div>
                 <div class="trust-item">
-                    <h3>5 anos</h3>
-                    <p>Experiência no mercado</p>
+                    <h3>5 years</h3>
+                    <p>Experience in the market</p>
                 </div>
                 <div class="trust-item">
                     <h3>24h</h3>
-                    <p>Suporte disponível</p>
+                    <p>Support available</p>
                 </div>
             </div>
         </div>
@@ -114,22 +137,22 @@
     <!-- Problem Section -->
     <section class="problem-section">
         <div class="container">
-            <h2>Você Está Perdendo Vendas Porque...</h2>
+            <h2>You Are Losing Sales Because...</h2>
             <div class="problem-grid">
                 <div class="problem-card">
                     <i class="fas fa-ban"></i>
-                    <h3>Suas Contas São Bloqueadas</h3>
-                    <p>Contas pessoais são facilmente bloqueadas pelo Facebook, interrompendo suas campanhas e causando perda de receita.</p>
+                    <h3>Your Accounts Get Blocked</h3>
+                    <p>Personal accounts are easily blocked by Facebook, interrupting your campaigns and losing revenue.</p>
                 </div>
                 <div class="problem-card">
                     <i class="fas fa-dollar-sign"></i>
-                    <h3>Limites de Gasto Baixos</h3>
-                    <p>Contas pessoais têm limites ridículos que impedem você de escalar seu negócio rapidamente.</p>
+                    <h3>Low Spend Limits</h3>
+                    <p>Personal accounts have ridiculous limits that prevent you from scaling your business quickly.</p>
                 </div>
                 <div class="problem-card">
                     <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Sem Garantias</h3>
-                    <p>Você perde dinheiro quando contas são bloqueadas sem nenhuma proteção ou garantia.</p>
+                    <h3>No Guarantees</h3>
+                    <p>You lose money when accounts are blocked without any protection or guarantee.</p>
                 </div>
             </div>
         </div>
@@ -138,35 +161,35 @@
     <!-- Solution Section -->
     <section class="solution-section">
         <div class="container">
-            <h2>A Solução Que Você Precisa</h2>
+            <h2>The Solution You Need</h2>
             <div class="solution-content">
                 <div class="solution-benefits">
-                    <h3>Contas de Agência NO LIMIT</h3>
-                    <p>Nossas contas são verificadas como agências oficiais do Facebook, garantindo:</p>
+                    <h3>NO LIMIT Agency Accounts</h3>
+                    <p>Our accounts are verified as official Facebook agencies, guaranteeing:</p>
 
                     <div class="benefits-container">
                         <div class="benefit-item">
                             <i class="fas fa-infinity"></i>
                             <div>
-                                <h4>Sem limite de gastos diários - Escale sem barreiras</h4>
+                                <h4>No daily spend limits - Scale without barriers</h4>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-shield-alt"></i>
                             <div>
-                                <h4>Proteção contra bloqueios - Operação garantida</h4>
+                                <h4>Protection against blocks - Guaranteed operation</h4>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-headset"></i>
                             <div>
-                                <h4>Suporte especializado - Ajuda sempre que precisar</h4>
+                                <h4>Specialized support - Help whenever needed</h4>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-rocket"></i>
                             <div>
-                                <h4>Escalabilidade total - Cresça sem limites</h4>
+                                <h4>Total scalability - Grow without limits</h4>
                             </div>
                         </div>
                     </div>
@@ -175,44 +198,44 @@
                 <div class="comparison-card">
                     <div class="comparison-grid">
                         <div class="comparison-item bad">
-                            <h4>Contas Pessoais</h4>
+                            <h4>Personal Accounts</h4>
                             <div class="comparison-features">
                                 <div class="feature-item">
                                     <i class="fas fa-times"></i>
-                                    <span>Limites baixos</span>
+                                    <span>Low limits</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-times"></i>
-                                    <span>Facilmente bloqueadas</span>
+                                    <span>Easily blocked</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-times"></i>
-                                    <span>Sem garantias</span>
+                                    <span>No guarantees</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-times"></i>
-                                    <span>Suporte limitado</span>
+                                    <span>Limited support</span>
                                 </div>
                             </div>
                         </div>
                         <div class="comparison-item good">
-                            <h4>Contas NO LIMIT</h4>
+                            <h4>NO LIMIT Accounts</h4>
                             <div class="comparison-features">
                                 <div class="feature-item">
                                     <i class="fas fa-check"></i>
-                                    <span>Sem limites</span>
+                                    <span>No limits</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check"></i>
-                                    <span>Proteção total</span>
+                                    <span>Full protection</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check"></i>
-                                    <span>Garantia 100%</span>
+                                    <span>100% guarantee</span>
                                 </div>
                                 <div class="feature-item">
                                     <i class="fas fa-check"></i>
-                                    <span>Suporte 24/7</span>
+                                    <span>24/7 support</span>
                                 </div>
                             </div>
                         </div>
@@ -226,65 +249,65 @@
     <!-- Pricing Section -->
     <section class="pricing-section">
         <div class="container">
-            <h2>Escolha Seu Pacote NO LIMIT</h2>
-            <p class="pricing-subtitle">Preços especiais por tempo limitado</p>
+            <h2>Choose Your NO LIMIT Package</h2>
+            <p class="pricing-subtitle">Limited-time special prices</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>1 Conta</h3>
+                        <h3>1 Account</h3>
                         <div class="price">$300</div>
-                        <p>Conta única NO LIMIT</p>
+                        <p>Single NO LIMIT account</p>
                     </div>
                     <ul class="features-list">
-                        <li>✅ Sem limite de gastos diários</li>
-                        <li>✅ Garantia de operação</li>
-                        <li>✅ Suporte básico</li>
-                        <li>✅ Configuração incluída</li>
+                        <li>✅ No daily spend limits</li>
+                        <li>✅ Operation guarantee</li>
+                        <li>✅ Basic support</li>
+                        <li>✅ Setup included</li>
                     </ul>
-                    <a href="https://wa.link/30gnt1" class="btn-whatsapp-buy">
+                    <a href="https://wa.link/p3jfp3" class="btn-whatsapp-buy">
                         <i class="fab fa-whatsapp"></i>
-                        Comprar no WhatsApp
+                        Buy on WhatsApp
                     </a>
                 </div>
 
                 <div class="pricing-card popular">
-                    <div class="popular-badge">Mais Popular</div>
+                    <div class="popular-badge">Most Popular</div>
                     <div class="pricing-header">
-                        <h3>3+ Contas</h3>
-                        <div class="price">$250 <span>cada</span></div>
-                        <p>a partir de 3+ contas</p>
-                        <div class="savings-badge">Você economiza $150!</div>
+                        <h3>3+ Accounts</h3>
+                        <div class="price">$250 <span>each</span></div>
+                        <p>from 3+ accounts</p>
+                        <div class="savings-badge">You save $150!</div>
                     </div>
                     <ul class="features-list">
-                        <li>✅ 3+ Contas NO LIMIT</li>
-                        <li>✅ Garantia total</li>
-                        <li>✅ Suporte prioritário</li>
-                        <li>✅ Configuração completa</li>
-                        <li>✅ Estratégias de escalonamento</li>
+                        <li>✅ 3+ NO LIMIT Accounts</li>
+                        <li>✅ Full guarantee</li>
+                        <li>✅ Priority support</li>
+                        <li>✅ Full setup</li>
+                        <li>✅ Scaling strategies</li>
                     </ul>
-                    <a href="https://wa.link/30gnt1" class="btn-whatsapp-buy">
+                    <a href="https://wa.link/p3jfp3" class="btn-whatsapp-buy">
                         <i class="fab fa-whatsapp"></i>
-                        Comprar no WhatsApp
+                        Buy on WhatsApp
                     </a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Aluguel Mensal</h3>
-                        <div class="price">$700 <span>/mês</span></div>
-                        <p>1 conta com substituição e gestão</p>
+                        <h3>Monthly Rental</h3>
+                        <div class="price">$700 <span>/month</span></div>
+                        <p>1 account with replace and management</p>
                     </div>
                     <ul class="features-list">
-                        <li>✅ 1 conta ativa</li>
-                        <li>✅ Substituição imediata em bloqueio</li>
-                        <li>✅ Gestão completa</li>
-                        <li>✅ Suporte dedicado</li>
-                        <li>✅ Estratégias de escalonamento</li>
+                        <li>✅ 1 active account</li>
+                        <li>✅ Immediate replace on block</li>
+                        <li>✅ Full management</li>
+                        <li>✅ Dedicated support</li>
+                        <li>✅ Scaling strategies</li>
                     </ul>
-                    <a href="https://wa.link/30gnt1" class="btn-whatsapp-buy">
+                    <a href="https://wa.link/p3jfp3" class="btn-whatsapp-buy">
                         <i class="fab fa-whatsapp"></i>
-                        Comprar no WhatsApp
+                        Buy on WhatsApp
                     </a>
                 </div>
             </div>
@@ -296,29 +319,29 @@
         <div class="container">
             <div class="guarantee-content">
                 <div class="guarantee-text">
-                    <h2>Nossa Garantia de 100%</h2>
-                    <p>Estamos tão confiantes na qualidade das nossas contas que oferecemos garantia total:</p>
+                    <h2>Our 100% Guarantee</h2>
+                    <p>We are so confident in the quality of our accounts that we offer full guarantee:</p>
 
                     <div class="guarantee-items">
                         <div class="guarantee-item">
                             <i class="fas fa-shield-alt"></i>
                             <div>
-                                <h4>Garantia contra problemas de cartão</h4>
-                                <p>Cartão recusado ou bloqueio de pagamento? Você recebe outra conta sem custo.</p>
+                                <h4>Guarantee against card issues</h4>
+                                <p>Card declined or payment block? You get another account at no cost.</p>
                             </div>
                         </div>
                         <div class="guarantee-item">
                             <i class="fas fa-sync-alt"></i>
                             <div>
-                                <h4>Garantia se a conta não gastar</h4>
-                                <p>Se a conta não conseguir gastar, substituímos imediatamente para você continuar operando.</p>
+                                <h4>Guarantee if the account doesn't spend</h4>
+                                <p>If the account cannot spend, we immediately replace it so you keep running.</p>
                             </div>
                         </div>
                         <div class="guarantee-item">
                             <i class="fas fa-star"></i>
                             <div>
-                                <h4>Aluguel: garantia total</h4>
-                                <p>No plano de aluguel, garantia completa durante todo o período contratado.</p>
+                                <h4>Rental: full guarantee</h4>
+                                <p>In the rental plan, full guarantee throughout the contracted period.</p>
                             </div>
                         </div>
                     </div>
@@ -326,8 +349,8 @@
 
                 <div class="guarantee-highlight">
                     <i class="fas fa-star"></i>
-                    <h3>100% Garantido</h3>
-                    <p>Ou seu dinheiro de volta</p>
+                    <h3>100% Guaranteed</h3>
+                    <p>Or your money back</p>
                 </div>
             </div>
         </div>
@@ -336,18 +359,18 @@
     <!-- Testimonials Section -->
     <section class="testimonials-section">
         <div class="container">
-            <h2>O Que Nossos Clientes Dizem</h2>
+            <h2>What Our Clients Say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p>"Finalmente conseguimos escalar nossas campanhas! As contas realmente entregam e o suporte é TOP!"</p>
+                    <p>"We finally scaled our campaigns! The accounts really deliver and support is TOP!"</p>
                     <div class="testimonial-author">João Roque - TORQUE Group</div>
                 </div>
                 <div class="testimonial-card">
-                    <p>"As primeiras contas verdadeiramente NO LIMIT! Contas muito fortes. Escalamos bastante. TOP suporte e processamento rápido."</p>
+                    <p>"The first truly NO LIMIT accounts! Very strong accounts. We scaled a lot. TOP support and fast processing."</p>
                     <div class="testimonial-author">Marcos Silva - BIFI Affiliate</div>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Primeiro compramos 3 contas e uma semana depois estávamos comprando mais 10! Usamos em nutra nos EUA e recomendamos!"</p>
+                    <p>"First we bought 3 accounts and a week later we were buying 10 more! We use them in nutra in the USA and recommend!"</p>
                     <div class="testimonial-author">Gabriel Grupo SIX</div>
                 </div>
             </div>
@@ -357,54 +380,100 @@
     <!-- Final CTA Section -->
     <section class="final-cta-section">
         <div class="container">
-            <h2>Pronto Para Escalar Seu Negócio?</h2>
-            <p>Junte-se a centenas de empreendedores que já estão escalando com nossas Contas NO LIMIT.</p>
+            <h2>Ready to Scale Your Business?</h2>
+            <p>Join hundreds of entrepreneurs already scaling with our NO LIMIT Accounts.</p>
 
             <div class="cta-buttons">
-                <a href="https://wa.link/30gnt1" class="btn-primary">
+                <a href="https://wa.link/p3jfp3" class="btn-primary">
                     <i class="fab fa-whatsapp"></i>
-                    Comprar Agora - WhatsApp
+                    Buy Now - WhatsApp
                 </a>
                 
             </div>
 
             <div class="urgency-banner">
                 <i class="fas fa-clock"></i>
-                <span>Oferta limitada! Preços especiais apenas hoje.</span>
+                <span>Limited offer! Special prices only today.</span>
             </div>
         </div>
     </section>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.link/30gnt1" class="floating-whatsapp-btn" title="Entre em contato pelo WhatsApp">
+    <a href="https://wa.link/p3jfp3" class="floating-whatsapp-btn" title="Contact us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
-        // Language flag button functionality
+        // Detect country and set flag
         (function() {
             const flagBtn = document.getElementById('languageFlagBtn');
             const flagIcon = document.getElementById('flagIcon');
             const flagText = document.getElementById('flagText');
             
-            // Initialize: show BR by default (since we're on BR page)
-            let isBR = true;
+            // Check if language preference is stored
+            let isBR = localStorage.getItem('language') === 'br' || false;
+            let isDetected = false;
             
-            // Check if user has a preference stored
+            // Detect country via timezone and navigator
+            function detectCountry() {
+                const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                const lang = navigator.language || navigator.userLanguage;
+                
+                // Check timezone for Brazil/Portugal
+                if (timezone.includes('America/Sao_Paulo') || 
+                    timezone.includes('America/Belem') || 
+                    timezone.includes('America/Fortaleza') ||
+                    timezone.includes('Europe/Lisbon')) {
+                    return 'br';
+                }
+                
+                // Check language
+                if (lang.startsWith('pt')) {
+                    return 'br';
+                }
+                
+                return 'en';
+            }
+            
+            // Set initial flag based on detection or preference
+            function setFlag(country) {
+                if (country === 'br') {
+                    flagIcon.textContent = '🇧🇷';
+                    flagText.textContent = 'BR';
+                    isBR = true;
+                } else {
+                    flagIcon.textContent = '🇬🇧';
+                    flagText.textContent = 'EN';
+                    isBR = false;
+                }
+            }
+            
+            // Initialize: check localStorage first, then detect
             const storedLang = localStorage.getItem('language');
-            if (storedLang === 'en') {
-                // If user prefers EN, redirect immediately
-                window.location.href = '/en';
+            if (storedLang === 'br' || storedLang === 'en') {
+                setFlag(storedLang);
             } else {
-                // Otherwise stay on BR (default for BR page)
-                localStorage.setItem('language', 'br');
+                const detected = detectCountry();
+                setFlag(detected);
+                localStorage.setItem('language', detected);
+                
+                // If detected as BR and we're on EN page, redirect to BR version
+                if (detected === 'br' && !window.location.pathname.includes('/br')) {
+                    window.location.href = '/br';
+                }
             }
             
             // Toggle language on click
             flagBtn.addEventListener('click', function() {
-                // If on BR page, switch to EN
-                localStorage.setItem('language', 'en');
-                window.location.href = '/en';
+                if (isBR) {
+                    // Currently showing BR, switch to EN
+                    localStorage.setItem('language', 'en');
+                    setFlag('en');
+                } else {
+                    // Currently showing EN, switch to BR and redirect
+                    localStorage.setItem('language', 'br');
+                    window.location.href = '/br';
+                }
             });
         })();
         

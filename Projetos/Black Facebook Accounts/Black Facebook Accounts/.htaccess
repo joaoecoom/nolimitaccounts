@@ -1,0 +1,18 @@
+# Configuração básica
+DirectoryIndex index.html
+
+# URLs limpas: /br e /en
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Se acessar root sem arquivo, serve index.html
+    RewriteRule ^$ index.html [L]
+    
+    # URL limpa /br → index-br.html
+    RewriteRule ^br/?$ index-br.html [L]
+    
+    # URL limpa /en → index-en.html
+    RewriteRule ^en/?$ index-en.html [L]
+</IfModule>
+

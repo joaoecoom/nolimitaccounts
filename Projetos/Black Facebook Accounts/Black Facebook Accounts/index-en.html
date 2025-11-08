@@ -435,8 +435,8 @@
                 localStorage.setItem('language', detected);
                 
                 // If detected as BR and we're on EN page, redirect to BR version
-                if (detected === 'br' && !window.location.pathname.includes('index-br.html')) {
-                    window.location.href = 'index-br.html';
+                if (detected === 'br' && !window.location.pathname.includes('/br')) {
+                    window.location.href = '/br';
                 }
             }
             
@@ -449,7 +449,7 @@
                 } else {
                     // Currently showing EN, switch to BR and redirect
                     localStorage.setItem('language', 'br');
-                    window.location.href = 'index-br.html';
+                    window.location.href = '/br';
                 }
             });
         })();
