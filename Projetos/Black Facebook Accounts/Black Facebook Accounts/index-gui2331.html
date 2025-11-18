@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO LIMIT Accounts - Scale Without Limits</title>
+    <script>
+        // Redirect BEFORE any content loads - no flicker!
+        (function() {
+            try {
+                const storedLang = localStorage.getItem('language');
+                if (storedLang === 'br') {
+                    window.location.replace('/gui2331/br');
+                    return;
+                }
+                
+                const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                const lang = navigator.language || navigator.userLanguage;
+                
+                if (timezone.includes('America/Sao_Paulo') || 
+                    timezone.includes('America/Belem') || 
+                    timezone.includes('America/Fortaleza') ||
+                    timezone.includes('Europe/Lisbon') ||
+                    lang.startsWith('pt')) {
+                    window.location.replace('/gui2331/br');
+                } else {
+                    window.location.replace('/gui2331/en');
+                }
+            } catch(e) {
+                // Fallback to EN if detection fails
+                window.location.replace('/gui2331/en');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
+
